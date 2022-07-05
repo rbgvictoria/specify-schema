@@ -1,0 +1,333 @@
+/* 
+    Document   : rbgm.specifyschema
+    Created on : Aug 24, 2014, 10:22:26 AM
+    Author     : Niels
+    Description:
+*/
+
+body {
+	font-family: Verdana, Arial;
+	font-size: 75%;
+	width: 100%;
+        margin: 0;
+}
+
+#container {
+	width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner {
+    background-color: #339933;
+}
+
+#banner>div {
+    width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    padding: 0.625rem 0;
+    clear: both;
+}
+
+#banner h1 {
+    color: #ffffff;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#version {
+    float: left;
+    margin-top: 0.1875rem;
+    margin-left: 0.625rem;
+}
+
+.version {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+#version .label {
+    font-weight: bold;
+    margin-left: 0.3125rem;
+}
+
+#table-dropdown {
+    float: right;
+}
+
+p.logout {
+	width: 1068px;
+	text-align: right;
+}
+
+p.login {
+	width: 1025px;
+	text-align: right;
+}
+
+table {
+	border-collapse: collapse; 
+	border: 1px solid #cccccc;
+}
+
+table.schema-table {
+    width: 100%;
+}
+
+tr.groupheading td {
+	padding-top: 15px;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+td {
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #cccccc;
+	vertical-align: top;
+}
+
+td span.primarykey {
+	font-weight: bold;
+}
+
+td span.melisr, td span.newfield, td span.attribute {
+	display: block;
+}
+
+td a span.fromself, td a span.from, td a span.toself, td a span.to {
+	display: block;
+	width: 155px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-right: 0px;
+}
+
+/*td a span.fromself:hover, a:focus span.fromself,
+td a span.from:hover, a:focus span.from,
+td a span.toself:hover, a:focus span.toself,
+td a span.to:hover, a:focus span.to {
+	background-color: #ffff99;
+}
+*/
+
+span.fromself {
+	background-image: url('../images/linkself.jpg');
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+span.from {
+	background-image: url('../images/linkfrom.jpg');
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+span.toself {
+	background-image: url('../images/linkself.jpg');
+	background-repeat: no-repeat;
+	background-position: 185px center;
+}
+
+span.to {
+	background-image: url('../images/linkto.jpg');
+	background-repeat: no-repeat;
+	background-position: 185px center;
+}
+
+.columnheaders td {
+	font-style: italic;
+	padding-top: 12px;
+	padding-bottom: 4px;
+}
+
+th {
+	border: 1px solid #cccccc;
+	padding-top: 18px;
+	padding-bottom: 9px;
+	background-color: #dddddd;
+	font-size: 110%;
+}
+
+.schema-table tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.table-info td, .table-info th {
+    padding: 0.1875rem 0.3125rem;
+    background-color: inherit;
+    text-align: left;
+}
+
+p.trail {
+	padding-left: 5px;
+	margin-bottom: 6px;
+}
+
+p.totableindex {
+	width: 1025px;
+	text-align: right;
+	margin-top: 4px;
+}
+
+p.loggedin {
+	width: 1068px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	padding-left: 5px;
+}
+
+h1 {
+	color: #336633;
+}
+
+td.edit {
+	vertical-align: bottom;
+}
+
+td.edit a {
+	color: #ff0000;
+	font-size: 90%;
+}
+
+div#footnotes {
+	width: 900px;
+}
+
+#footnotes p {
+	padding-left: 5px;
+}
+
+a span.footnote {
+	color: #0000ff;
+}
+
+span.spfieldremark {
+	color: #ff0000;
+}
+
+/************* Edit *************/
+form[name=edit] {
+	padding-left: 5px;
+}
+
+option.used {
+	color: #999999;
+}
+
+span.fname {
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+}
+
+h2.comments, h3.commentheader {
+	color: #2d6e89;
+}
+
+h2.comments {
+	padding-top: 20px;
+}
+
+div.comment, div.showcomment {
+	border: 1px solid #7F9DB9;
+	padding: 5px;
+	margin: 2px;
+	margin-bottom: 6px;
+}
+
+div.comment {
+	width: 490px;
+}
+
+div.showcomment {
+	width: 880px;
+}
+
+div.commentdate, div.commentpostedby {
+	color: #999999;
+	font-size: 90%;
+}
+
+div.commentdate {
+	padding-top: 3px;
+	padding-bottom: 8px;
+	letter-spacing: 2px;
+}
+
+div.commentpostedby {
+	padding-top: 12px;
+	padding-bottom: 6px;
+}
+
+div.editcomment {
+	width: 100%;
+	text-align: right;
+}
+
+div.editcomment a {
+	color: #999999;
+	font-size: 80%;
+}
+
+/***************************************/
+#footer {
+    margin-top: 1.25rem;
+    border-top: solid 0.125rem #339933;
+    padding: 0.3125rem 0;
+}
+
+#banner .db-selector {
+    float: left;
+}
+
+#banner .db-selector select {
+    width: 8rem;
+}
+
+.code {
+    padding: 0.3125rem;
+}
+
+.code pre {
+    font-family: sans-serif !important;
+}
+
+#tabs {
+    margin-top: 1.25rem;
+}
+
+table.trigger {
+    width: 100%;
+}
+
+#tabs.ui-widget-content {
+    border: none;
+}
+
+#tabs .ui-tabs-panel {
+    padding: 0;
+}
+
+pre.xml {
+    font-size: 1rem;
+}
+
+.viewset, .view-label {
+    font-size: 0.625rem;
+    color: #003399;
+}
